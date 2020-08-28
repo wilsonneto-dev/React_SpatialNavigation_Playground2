@@ -1,0 +1,46 @@
+.container {
+}
+
+.container * {
+  transition: all 0.5s;
+}
+
+.container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+}
+.container ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  display: inline-block;
+}
+.container ul li img {
+  box-sizing: border-box;
+  border: 2px solid white;
+  width: 130px;
+  margin-right: 10px;
+}
+.container ul li img.active {
+  border: 2px solid blue;
+  transform: scale(1.1);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  opacity: 0.5;
+  width: 30px;
+  margin: 10px;
+}
+.footer img.active {
+  opacity: 1;
+  transform: scale(1.1);
+}

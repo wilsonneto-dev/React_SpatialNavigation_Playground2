@@ -6,7 +6,7 @@ const InnerParentFocusable = ({ children, setFocus, focusTo }) => {
     if (focusTo) {
       setFocus(focusTo);
     }
-  }, [focusTo]);
+  }, [focusTo, setFocus]);
   return <>{children}</>;
 };
 

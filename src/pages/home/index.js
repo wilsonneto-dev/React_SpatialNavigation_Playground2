@@ -10,7 +10,7 @@ import styles from "./styles.module.css";
 
 const Home = (props) => {
   const [list, setList] = useState([]);
-  const [leftPosition, setLeftPosition] = useState(0);
+  // const [leftPosition, setLeftPosition] = useState(0);
   const [focusedId, setFocusedId] = useState("");
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Home = (props) => {
               <Focusable
                 focusKey={`movie-${index}`}
                 onBecameFocused={(a, b, c) => {
-                  setLeftPosition(index * (130 + 10));
+                  // setLeftPosition(index * (130 + 10));
                   console.log(a);
                   console.log(b);
                   console.log(c);
@@ -62,7 +62,7 @@ const Home = (props) => {
               <Focusable
                 focusKey={`movie-${index}-2`}
                 onBecameFocused={(a, b, c) => {
-                  setLeftPosition(index * (130 + 10));
+                  // setLeftPosition(index * (130 + 10));
                   console.log(a);
                   console.log(b);
                   console.log(c);
